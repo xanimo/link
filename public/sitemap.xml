@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/locations</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/options</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/admin</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/login</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/logout</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/feedback</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/error</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/about</loc>
+  </url>
+  <url>
+    <loc>https://ucb-bc.firebaseapp.com/terms</loc>
+  </url>
+</urlset>

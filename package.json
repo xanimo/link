@@ -1,0 +1,147 @@
+{
+  "name": "Link-SF",
+  "version": "v1.0.0",
+  "engines": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zendesk/linksf.git"
+  },
+  "license": "Apache-2.0",
+  "contributors": [
+    {
+      "name": "Benjamin Osheroff"
+    },
+    {
+      "name": "Igor Justino de Souza"
+    },
+    {
+      "name": "Rose Trujillo"
+    },
+    {
+      "name": "Shajith Chacko"
+    },
+    {
+      "name": "Kenshiro Nakagawa"
+    },
+    {
+      "name": "Greg Ziegan"
+    },
+    {
+      "name": "Craig Day"
+    },
+    {
+      "name": "Adam Hart"
+    },
+    {
+      "name": "Michael Huston"
+    }
+  ],
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "camelize": "^1.0.0",
+    "decamelize-keys-deep": "^0.1.1",
+    "es6-promisify": "^5.0.0",
+    "fastclick": "^1.0.6",
+    "firebase": "^4.8.1",
+    "google-maps": "^3.2.1",
+    "history": "^4.7.2",
+    "ramda": "^0.25.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-google-autocomplete": "^1.0.15",
+    "react-google-maps": "^9.4.3",
+    "react-nl2br": "^0.4.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "autoprefixer": "^7.2.3",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "browser-sync": "^2.18.13",
+    "chai": "^4.1.2",
+    "css-loader": "^0.28.7",
+    "del": "^3.0.0",
+    "dotenv-webpack": "^1.5.4",
+    "ejs": "^2.5.7",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "extend": "^3.0.1",
+    "file-loader": "^1.1.6",
+    "firebase-tools": "^3.16.0",
+    "front-matter": "^2.3.0",
+    "highlight.js": "^9.12.0",
+    "json-loader": "^0.5.7",
+    "markdown-it": "^8.4.0",
+    "mocha": "^4.0.1",
+    "path-to-regexp": "^2.1.0",
+    "pixrem": "^4.0.1",
+    "pleeease-filters": "^4.0.0",
+    "postcss": "^6.0.14",
+    "postcss-calc": "^6.0.1",
+    "postcss-color-function": "^4.0.1",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.2.0",
+    "postcss-custom-selectors": "^4.0.1",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.9",
+    "postcss-media-minmax": "^3.0.0",
+    "postcss-nesting": "^4.2.1",
+    "postcss-selector-matches": "^3.0.1",
+    "postcss-selector-not": "^3.0.1",
+    "react-hot-loader": "^3.1.3",
+    "s3": "^4.4.0",
+    "style-loader": "^0.19.1",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.2",
+    "webpack-hot-middleware": "^2.21.0"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015",
+      "stage-1"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "string-quotes": "single"
+    }
+  },
+  "scripts": {
+    "eslint": "eslint components core pages test utils main.js run.js webpack.config.js",
+    "stylelint": "stylelint \"components/**/*.css\" \"pages/**/*.css\"",
+    "lint": "npm run eslint && npm run stylelint",
+    "test": "echo tests planned",
+    "test:watch": "mocha --compilers js:babel-register --reporter min --watch",
+    "clean": "node run clean",
+    "build": "node run build",
+    "build:debug": "node run build --debug",
+    "publish": "node run publish",
+    "publish:debug": "node run publish --debug",
+    "start": "node run"
+  }
+}
